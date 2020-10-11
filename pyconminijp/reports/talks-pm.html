@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/pyconminijp/reports/talks-pm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Oct 2020 06:21:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" href="../_/rsrc/1468877516539/favicon.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/5acb68/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/pyconminijp/reports","deleted":false,"title":"\u958b\u50ac\u5831\u544a","dir":"ltr"},{"path":"/site/pyconminijp/reports/talks-pm","deleted":false,"title":"4.\u5348\u5f8c\u306e\u30bb\u30c3\u30b7\u30e7\u30f3","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/5acb68/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":true,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://1710388117-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"PyCon mini JP","jot2atari":{"eligibility":"ineligible"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"disableGroups":true,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue\u003dhttps://sites.google.com/site/pyconminijp/reports/talks-pm\u0026service\u003djotspot","analyticsAccountId":"UA-21901369-1","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/5acb68/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/5acb68/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/5acb68/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/5acb68/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/5acb68/system/app/css/trogedit.css","../_/rsrc/1601537872000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/5acb68/system/app/css/codeeditor.css","/site/pyconminijp/_/rsrc/1601537872000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/pyconminijp","name":"pyconminijp","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/reports","parentWuid":"wuid:gx:8e2a8ca01489377","siteLocale":"ja","timeZone":"America/Los_Angeles","type":"text","title":"4.\u5348\u5f8c\u306e\u30bb\u30c3\u30b7\u30e7\u30f3","locale":"en","wuid":"wuid:gx:75275c618aaf36d4","revision":8,"path":"/reports/talks-pm","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"talks-pm","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","onePickToken":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/site/pyconminijp/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["1 \u5206\u524d","__duration__ \u5206\u524d","1 \u6642\u9593\u524d","__duration__ \u6642\u9593\u524d"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="4.午後のセッション - PyCon mini JP" />
+<meta itemprop="name" content="4.午後のセッション - PyCon mini JP" />
+<meta property="og:title" content="4.午後のセッション - PyCon mini JP" />
+<meta name="description" content="本サイトは &quot;PyCon mini JP&quot; の開催に向けた情報共有サイトです。最終目標は、Pythonの使い手が一同に集まり、他の分野などの情報や知識や知人を増やす場所として、日本でのPyConの開催です。 &quot;PyCon mini JP&quot; はPyConの前段として、まずは日本のユーザのためになるものを開催し、今後これを継続していくためのノウハウを次に引き継いでいくことを目標とします。" />
+<meta itemprop="description" content="本サイトは &quot;PyCon mini JP&quot; の開催に向けた情報共有サイトです。最終目標は、Pythonの使い手が一同に集まり、他の分野などの情報や知識や知人を増やす場所として、日本でのPyConの開催です。 &quot;PyCon mini JP&quot; はPyConの前段として、まずは日本のユーザのためになるものを開催し、今後これを継続していくためのノウハウを次に引き継いでいくことを目標とします。" />
+<meta id="meta-tag-description" property="og:description" content="本サイトは &quot;PyCon mini JP&quot; の開催に向けた情報共有サイトです。最終目標は、Pythonの使い手が一同に集まり、他の分野などの情報や知識や知人を増やす場所として、日本でのPyConの開催です。 &quot;PyCon mini JP&quot; はPyConの前段として、まずは日本のユーザのためになるものを開催し、今後これを継続していくためのノウハウを次に引き継いでいくことを目標とします。" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/5acb68/system/app/themes/vinylpanel/standard-css-vinylpanel-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1601537872000/system/app/css/overlay4bbd.css?cb=vinylpanel960px%25200goog-ws-leftnonemiddlestandard" />
+<link rel="stylesheet" type="text/css" href="../_/rsrc/1601537872000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/pyconminijp/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>4.午後のセッション - PyCon mini JP</title>
+<meta itemprop="image" content="/site/pyconminijp/_/rsrc/1468877517747/config/customLogo.gif?revision=1" />
+<meta property="og:image" content="/site/pyconminijp/_/rsrc/1468877517747/config/customLogo.gif?revision=1" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" ja            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="height:auto;">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="height:auto;">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="sites-chrome-header-valign-middle"><div class="sites-header-cell-buffer-wrapper"><h2><a href="../index.html" id="sites-chrome-userheader-logo"><img id="logo-img-id" src="../_/rsrc/1468877517747/config/customLogoc7fe.png?revision=1" alt="PyCon mini JP" class="sites-logo sites-chrome-header-valign-middle " /></a><a href="../index.html" dir="ltr" id="sites-chrome-userheader-title">PyCon mini JP</a></h2></div></td><td class="sites-layout-searchbox sites-chrome-header-valign-middle "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="https://sites.google.com/site/pyconminijp/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="このサイトを検索" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">このサイトを検索</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:200px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:3b2a480be041e60"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../home.html" jotId="wuid:gx:3b2a480be041e60" class="sites-navigation-link topLevel">ホーム</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../registration.html" jotId="wuid:gx:5279b78832e33c01" class="sites-navigation-link">参加登録フォーム</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../talks.html" jotId="wuid:gx:5cddba660fc0b501" class="sites-navigation-link">講演リスト</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../home/information-for-audience.html" jotId="wuid:gx:25b70e76950bd8bc" class="sites-navigation-link">参加者の皆様へ</a></div></li></ul></li><li class="topLevel parent " wuid="gx:57521653d73bf82d"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../project-definition.html" jotId="wuid:gx:57521653d73bf82d" class="sites-navigation-link topLevel">プロジェクト概要</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../the-team.html" jotId="wuid:gx:1a4b0c4492ebe0e" class="sites-navigation-link">プロジェクト運営チーム</a></div></li></ul></li><li class="topLevel parent " wuid="gx:38fc30f268d34832"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../project-updates.html" jotId="wuid:gx:38fc30f268d34832" class="sites-navigation-link topLevel">プロジェクトの状況</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../to-dos.html" jotId="wuid:gx:6e152013286c6e6a" class="sites-navigation-link">ToDo</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="../calendar.html" jotId="wuid:gx:2d137c71f5690365" class="sites-navigation-link">マイルストーン</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="../file-cabinet.html" jotId="wuid:gx:2434f251e91aec68" class="sites-navigation-link topLevel">ファイル添付</a></div></li><li class="topLevel parent " wuid="gx:8e2a8ca01489377"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="../reports.html" jotId="wuid:gx:8e2a8ca01489377" class="sites-navigation-link topLevel">開催報告</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="links.html" jotId="wuid:gx:4a3029f427999139" class="sites-navigation-link">1.レポートへのリンク集</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="talks-am.html" jotId="wuid:gx:22475cc2c2e8ad10" class="sites-navigation-link">2.午前中のセッション</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="lunch-lt.html" jotId="wuid:gx:27db0c55f3e10859" class="sites-navigation-link">3.ランチLT</a></div></li><li class=""><div class="current-bg" jotId="wuid:gx:75275c618aaf36d4" dir="ltr" style="padding-left: 38px;">4.午後のセッション</div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="lt.html" jotId="wuid:gx:718efebcee6054d6" class="sites-navigation-link">5.ライトニングトーク</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="photos.html" jotId="wuid:gx:51a4b8ac6157d160" class="sites-navigation-link">6.写真集</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="videos.html" jotId="wuid:gx:841d72e685bd3fb" class="sites-navigation-link">7.動画集</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="enquete.html" jotId="wuid:gx:16c6eb360f9e5eb2" class="sites-navigation-link">8.アンケート結果</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="../system/app/pages/sitemap/hierarchy.html" jotId="wuid:gx:4294ef993623403c" class="sites-navigation-link topLevel">サイトマップ</a></div></li></ul></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-embed-align-left-wrapping-off" id="COMP_28591332398355007" role="complementary"><div class="sites-embed-border-on sites-embed sites-embed-full-width" style="width:100%;"><div class="sites-embed-content sites-embed-type-countdown"><div aria-label="3542  日経過PyCon mini JP (2011年1月29日:土曜日)" class="sites-embed-countdown sites-embed-countdown-fromdateutc-2011-1-29"><span jotid="content"><p style="text-align: center"><strong aria-hidden="true">PyCon mini JP (2011年1月29日:土曜日)</strong><br aria-hidden="true" /><span aria-hidden="true"> から </span><strong aria-hidden="true" class="sites-embed-countdown-daysapart">3542</strong><span aria-hidden="true"> 日経過</span></p></span></div></div></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_17013498931191862" class="sites-embed" role="complementary"><h4 class="sites-embed-title">スポンサー</h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><font face="arial, sans-serif"><span style="border-collapse:collapse"><span style="color:rgb(61,62,63);line-height:19px"><a href="http://dev.ariel-networks.com/" target="_blank" rel="nofollow">アリエル・ネットワーク 株式会社</a></span><br /></span></font><div><font face="arial, sans-serif"><div style="display:block;text-align:left"><a href="http://dev.ariel-networks.com/" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877518252/config/ariel_180.png" /></a></div><span style="border-collapse:collapse"><div><font face="arial, sans-serif"><span style="border-collapse:collapse"><br /></span></font></div><a href="http://gu3.co.jp/" target="_blank" rel="nofollow">株式会社gumi</a></span></font></div><div><font face="arial, sans-serif"><div style="display:block;text-align:left"><a href="http://gu3.co.jp/" imageanchor="1" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877513453/config/gumi_sign.jpg" /></a></div></font></div><div><font face="arial, sans-serif"><br /></font></div><div><font face="arial, sans-serif"><span style="border-collapse:collapse"><a href="http://www.beproud.jp/" target="_blank" rel="nofollow">株式会社ビープラウド</a></span></font></div><div><font face="arial, sans-serif"><span style="border-collapse:collapse"><div style="display:block;text-align:left"><a href="http://www.beproud.jp/" imageanchor="1" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877518013/config/Beproud.jpg" /></a></div><br /></span></font></div><div><font face="arial, sans-serif"><span style="border-collapse:collapse"><span style="border-collapse:separate;font-family:monospace;font-size:medium;white-space:pre-wrap"><a href="http://www.nexedi.co.jp/" target="_blank" rel="nofollow">株式会社Nexedi</a></span></span></font></div><div><font face="arial, sans-serif"><span style="border-collapse:collapse"><span style="border-collapse:separate;font-family:monospace;font-size:medium;white-space:pre-wrap"><div style="display:block;text-align:left"><a href="http://www.nexedi.co.jp/" imageanchor="1" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877512616/config/nexedi-jp.png" /></a></div><br /></span></span></font></div></div></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_14254564349539578" class="sites-embed" role="complementary"><h4 class="sites-embed-title">協力</h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><div style="display:block;text-align:left"><a href="http://www.rakuten.co.jp/" target="_blank" rel="nofollow">楽天株式会社</a></div><div style="display:block;text-align:left"><div style="display:block;text-align:left"><a href="http://www.rakuten.co.jp/" imageanchor="1" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877517240/config/release0714_01.png" /></a></div></div><div style="display:block;text-align:left"><br /></div><div style="display:block;text-align:left"><span style="font-family:monospace;font-size:medium;white-space:pre-wrap"><a href="http://cerevo.com/" target="_blank" rel="nofollow">株式会社CEREVO</a></span></div><div style="display:block;text-align:left"><a href="http://cerevo.com/" target="_blank" rel="nofollow"><img border="0" src="../_/rsrc/1468877516409/config/CerevoLogo_full_blue.png" /></a></div><br /><div><a href="http://www.oreilly.co.jp/" rel="nofollow">オライリー・ジャパン</a></div><div><div style="display:block;text-align:left"></div><div style="display:block;text-align:left"><a href="http://www.oreilly.co.jp/" imageanchor="1" rel="nofollow"><img border="0" src="../_/rsrc/1468877516813/config/oraj_logo.jpg" /></a></div><br /></div><div><a href="http://www.codezine.jp/" rel="nofollow">CodeZine</a></div><div><div style="display:block;text-align:left"><a href="http://www.codezine.jp/" imageanchor="1" rel="nofollow"><img border="0" src="../_/rsrc/1468877514953/config/czlogo02.gif" /></a></div><br /></div></div></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_417369500733912" class="sites-embed" role="complementary"><h4 class="sites-embed-title">ディスカッションに参加しませんか</h4><div class="sites-embed-content sites-embed-content-sidebar-textbox"><div dir="ltr"><p style="text-align:center"><a href="http://groups.google.com/support/bin/topic.py?topic=9216" target="_blank"><img border="0" src="../_/rsrc/1468877529885/config/app/images/psd-chat-icon-smaller.gif" /></a><br /><a href="http://groups.google.com/group/pycon-organizers-jp" target="_blank">ディスカッションへの参加</a></p></div></div></div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_1233004576060921" class="sites-embed" role="complementary"><h4 class="sites-embed-title">最近の更新履歴</h4><div class="sites-embed-content sites-sidebar-recent-activity"><ul><li><a jotid="wuid:gx:3a5b089fae35ddca" dir="ltr" href="../project-updates/2011228meeting.html">2011/2/28 反省会議事録</a><div><span class="sites-text-secondary">Takayuki Shimizukawa 移動</span></div></li><li><a jotid="wuid:gx:4a3029f427999139" dir="ltr" href="links.html">1.レポートへのリンク集</a><div><span class="sites-text-secondary">Takanori Suzuki 編集</span></div></li><li><a jotid="wuid:gx:3b2a480be041e60" dir="ltr" href="../home.html">ホーム</a><div><span class="sites-text-secondary">Takanori Suzuki 編集</span></div></li><li><a jotid="wuid:gx:54696d0b689caf6e" dir="ltr" href="../project-updates/pyconminijp2011129.html">PyCon mini JP 2011/1/29 にご来場いただきありがとうございました</a><div><span class="sites-text-secondary">Takayuki Shimizukawa 作成</span></div></li><li><a jotid="wuid:gx:494c12cd1f2d6f8f" dir="ltr" href="../to-dos.html">ToDo</a><div><span class="sites-text-secondary">Takanori Suzuki アイテムを編集</span></div></li><li class="sites-sidebar-recent-activity-viewall"><a href="../system/app/pages/recentChanges.html">View All</a></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="../reports.html" dir="ltr">開催報告</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">4.午後のセッション</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:300px;"><div class="sites-embed-content sites-embed-type-toc"><div class="goog-toc sites-embed-toc-maxdepth-6"><p>目次</p><ol class="goog-toc"><li class="goog-toc"><a href="#TOC-Python-"><strong>1 </strong>Pythonでフィジカルコンピューティング</a></li><li class="goog-toc"><a href="#TOC-Python-1"><strong>2 </strong>ハードウェアを用いてPythonを学ぶ</a></li><li class="goog-toc"><a href="#TOC-WSGI-Server-"><strong>3 </strong>最速WSGI Server研究会</a></li><li class="goog-toc"><a href="#TOC-Message-Pack"><strong>4 </strong>Message Pack</a></li></ol></div></div></div></div><h3><a name="TOC-Python-"></a>Pythonでフィジカルコンピューティング</h3><b>入江田 昇</b>(<a href="http://twitter.com/#%21/nobonobo" rel="nofollow">@nobonobo</a>)<br />PythonMatrixJp(<a href="http://python.matrix.jp/" rel="nofollow">http://python.matrix.jp/</a>)<br />
+<div style="width:425px"><b style="display:block;margin:12px 0pt 4px"><a href="http://www.slideshare.net/irieda/python-physicalcomputing" title="Python physicalcomputing" rel="nofollow">Python physicalcomputing</a></b><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:425px;"><div class="sites-embed-content sites-embed-type-ggs-gadget"><iframe width="425" height="355" scrolling="no" frameborder="0" id="1829756126" name="1829756126" allowtransparency="true" class="igm" src="http://jujo00obo2o234ungd3t8qjfcjrs3o6k-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/embed/embed.xml&amp;container=enterprise&amp;view=home&amp;lang=ja&amp;country=ALL&amp;sanitize=0&amp;v=9a4f63e1de1ecd28&amp;libs=core:setprefs&amp;parent=https://sites.google.com/site/pyconminijp/reports/talks-pm#up_embed_snippet=%3Cobject+xmlns%3D%22http://www.w3.org/1999/xhtml%22+height%3D%22355%22+id%3D%22__sse6745488%22+width%3D%22425%22%3E%3Cparam+name%3D%22movie%22+value%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dpythonphysicalcomputing-110129101538-phpapp02%26amp;stripped_title%3Dpython-physicalcomputing%26amp;userName%3Dirieda%22+/%3E%3Cparam+name%3D%22allowFullScreen%22+value%3D%22true%22+/%3E%3Cparam+name%3D%22allowScriptAccess%22+value%3D%22always%22+/%3E%3Cembed+allowfullscreen%3D%22true%22+allowscriptaccess%3D%22always%22+height%3D%22355%22+name%3D%22__sse6745488%22+src%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dpythonphysicalcomputing-110129101538-phpapp02%26amp;stripped_title%3Dpython-physicalcomputing%26amp;userName%3Dirieda%22+type%3D%22application/x-shockwave-flash%22+width%3D%22425%22+/%3E%3C/object%3E&amp;st=e%3DAIHE3cBmJfggX9Oil%252FhmJTIbsBi5v3x2spDVQMpCMdP%252BBAJqsJRkUXptROaT3rN9S0599RzBh2AxUGGazJ2Vc4fOQpSfMlLVDhnZv4kT%252F0XAtdaYea%252BXj8HA6HBwMhyb7m9MzXeVqtzz%26c%3Denterprise&amp;rpctoken=-8459900189150572438"></iframe></div></div></div>
+<div style="padding:5px 0pt 12px">View more <a href="http://www.slideshare.net/" rel="nofollow">presentations</a> from <a href="http://www.slideshare.net/irieda" rel="nofollow">irieda</a>.</div></div><ul><li><a href="http://osaka.accence.com/" rel="nofollow">http://osaka.accence.com/</a></li><li><a href="http://code.google.com/p/python-on-a-chip/">python-on-a-chip</a></li><li><a href="http://www.myhdl.org/doku.php/start" rel="nofollow">MyHDL</a></li><li><a href="http://python.matrix.jp/modules/myhdl.html" rel="nofollow">http://python.matrix.jp/modules/myhdl.html</a></li><li><a href="http://opencores.org/" rel="nofollow">http://opencores.org/</a><br /></li></ul><h3><a name="TOC-Python-1"></a>ハードウェアを用いてPythonを学ぶ</h3><b>北神 雄太</b>(<a href="http://twitter.com/#%21/nonnoise" rel="nofollow">@nonNoise</a>)<br />ArtifactNoise(<a href="http://artifactnoise.com/" rel="nofollow">http://artifactnoise.com/</a>)<b><br /></b>
+<div style="width:425px"><b style="display:block;margin:12px 0pt 4px"><a href="http://www.slideshare.net/yutakitagami/python-6744817" title="ハードウェアを用いてPythonを学ぶ" rel="nofollow">ハードウェアを用いてPythonを学ぶ</a></b><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:425px;"><div class="sites-embed-content sites-embed-type-ggs-gadget"><iframe width="425" height="355" scrolling="no" frameborder="0" id="927984954" name="927984954" allowtransparency="true" class="igm" src="http://jujo00obo2o234ungd3t8qjfcjrs3o6k-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/embed/embed.xml&amp;container=enterprise&amp;view=home&amp;lang=ja&amp;country=ALL&amp;sanitize=0&amp;v=9a4f63e1de1ecd28&amp;libs=core:setprefs&amp;parent=https://sites.google.com/site/pyconminijp/reports/talks-pm#up_embed_snippet=%3Cobject+xmlns%3D%22http://www.w3.org/1999/xhtml%22+height%3D%22355%22+id%3D%22__sse6744817%22+width%3D%22425%22%3E%3Cparam+name%3D%22movie%22+value%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dpython-110129081501-phpapp01%26amp;stripped_title%3Dpython-6744817%26amp;userName%3Dyutakitagami%22+/%3E%3Cparam+name%3D%22allowFullScreen%22+value%3D%22true%22+/%3E%3Cparam+name%3D%22allowScriptAccess%22+value%3D%22always%22+/%3E%3Cembed+allowfullscreen%3D%22true%22+allowscriptaccess%3D%22always%22+height%3D%22355%22+name%3D%22__sse6744817%22+src%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dpython-110129081501-phpapp01%26amp;stripped_title%3Dpython-6744817%26amp;userName%3Dyutakitagami%22+type%3D%22application/x-shockwave-flash%22+width%3D%22425%22+/%3E%3C/object%3E&amp;st=e%3DAIHE3cBA7H500fyrJxF7aHGGT50I3ve12Hf%252FUDpvDT99lfX5q%252FewOgKTAWBifdd%252BKdVHqp8X9fX%252FrFj0UjtUOJVsf8gn2B0kivML1ggpw8leHZFrCbhD16z4KhgQzJI5TLbKZp%252Byd6HV%26c%3Denterprise&amp;rpctoken=-8459900189150572438"></iframe></div></div></div>
+<div style="padding:5px 0pt 12px">View more <a href="http://www.slideshare.net/" rel="nofollow">presentations</a> from <a href="http://www.slideshare.net/yutakitagami" rel="nofollow">Yuta Kitagami</a>.</div>
+</div>
+<ul><li><a href="http://www.pygame.org/news.html" rel="nofollow">News pygame - python game development</a></li><li><a href="http://noise.artifactnoise.com/錦　伊織ファンサイト（python擬人化）/" rel="nofollow">錦　伊織ファンサイト（Python擬人化） « 北神Noiseの超絶開発日記</a></li></ul><h3><a name="TOC-WSGI-Server-"></a>最速WSGI Server研究会</h3><b>松原 豊</b>(<a href="http://twitter.com/mopemope" rel="nofollow">@mopemope</a>)<br />株式会社 Abby CTO<br />def __mopemope__(self, *args, **kwargs):(<a href="http://d.hatena.ne.jp/mopemope/" rel="nofollow">http://d.hatena.ne.jp/mopemope/</a>)<br /><br />
+<div style="width:425px"><b style="display:block;margin:12px 0pt 4px"><a href="http://www.slideshare.net/YutakaMatsubara/test-6732176" title="最速WSGI Server研究会" rel="nofollow">最速WSGI Server研究会</a></b><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-off sites-embed" style="width:425px;"><div class="sites-embed-content sites-embed-type-ggs-gadget"><iframe width="425" height="355" scrolling="no" frameborder="0" id="571239739" name="571239739" allowtransparency="true" class="igm" src="http://jujo00obo2o234ungd3t8qjfcjrs3o6k-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=http://www.gstatic.com/sites-gadgets/embed/embed.xml&amp;container=enterprise&amp;view=home&amp;lang=ja&amp;country=ALL&amp;sanitize=0&amp;v=9a4f63e1de1ecd28&amp;libs=core:setprefs&amp;parent=https://sites.google.com/site/pyconminijp/reports/talks-pm#up_embed_snippet=%3Cobject+xmlns%3D%22http://www.w3.org/1999/xhtml%22+height%3D%22355%22+id%3D%22__sse6732176%22+width%3D%22425%22%3E%3Cparam+name%3D%22movie%22+value%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dwsgi-110128041158-phpapp01%26amp;stripped_title%3Dtest-6732176%26amp;userName%3DYutakaMatsubara%22+/%3E%3Cparam+name%3D%22allowFullScreen%22+value%3D%22true%22+/%3E%3Cparam+name%3D%22allowScriptAccess%22+value%3D%22always%22+/%3E%3Cembed+allowfullscreen%3D%22true%22+allowscriptaccess%3D%22always%22+height%3D%22355%22+name%3D%22__sse6732176%22+src%3D%22http://static.slidesharecdn.com/swf/ssplayer2.swf?doc%3Dwsgi-110128041158-phpapp01%26amp;stripped_title%3Dtest-6732176%26amp;userName%3DYutakaMatsubara%22+type%3D%22application/x-shockwave-flash%22+width%3D%22425%22+/%3E%3C/object%3E&amp;st=e%3DAIHE3cCDyEEcGXfTQBk%252BH8zI1OeC7HTkUSrYrVpmwTUew4W%252Bij62miHEG6lQqSmT9Gv2OFjPPNpr7qpnk1f4lWbgsGLqGLgsZF2KeBD0%252B67xzvyL0Wt7KujFKqd0uNq6V3c0cqWbR2PF%26c%3Denterprise&amp;rpctoken=-8459900189150572438"></iframe></div></div></div>
+<div style="padding:5px 0pt 12px">View more <a href="http://www.slideshare.net/" rel="nofollow">presentations</a> from <a href="http://www.slideshare.net/YutakaMatsubara" rel="nofollow">Yutaka Matsubara</a>.</div>
+</div>
+<ul><li>meinheld <a href="http://pypi.python.org/pypi/meinheld" rel="nofollow">http://pypi.python.org/pypi/meinheld</a></li><li><a href="https://github.com/mopemope/meinheld/" rel="nofollow">https://github.com/mopemope/meinheld/</a></li><li><a href="http://code.google.com/p/google-perftools/">google-perftools</a></li></ul><h3><a name="TOC-Message-Pack"></a>Message Pack</h3><b>稲田 直哉</b>(<a href="http://twitter.com/methane" rel="nofollow">@methane</a>)<br />KLab株式会社<br />methaneの日記(<a href="http://d.hatena.ne.jp/methane/" rel="nofollow">http://d.hatena.ne.jp/methane/</a>)<br /><br />
+<div><div class="sites-embed-align-left-wrapping-off"><div class="sites-embed-border-on sites-embed" style="width:410px;"><h4 class="sites-embed-title">MessagePack ‎(PyCon mini JP 2010.01)‎</h4><div class="sites-embed-object-title" style="display:none;">MessagePack ‎(PyCon mini JP 2010.01)‎</div><div class="sites-embed-content sites-embed-type-presently"><iframe src="https://docs.google.com/present/embed?hl=ja&amp;id=0AY7uIKzqTU1JZGRmejRoOHdfMTg2Y2Q5cXpnZmo&amp;size=s" width="410" height="342" title="MessagePack ‎(PyCon mini JP 2010.01)‎" frameborder="0" id="296797492"></iframe></div></div></div><br /><ul><li>MessagePack <a href="http://msgpack.org/" rel="nofollow">http://msgpack.org/</a><br /></li><li>msgpack-python <a href="http://pypi.python.org/pypi/msgpack-python/" rel="nofollow">http://pypi.python.org/pypi/msgpack-python/</a><br /></li><li><a href="http://www.slideshare.net/frsyuki/architecture-of-messagepack" rel="nofollow">http://www.slideshare.net/frsyuki/architecture-of-messagepack</a></li><li><a href="http://redmine.msgpack.org/projects/msgpack/wiki/FormatSpec" rel="nofollow">http://redmine.msgpack.org/projects/msgpack/wiki/FormatSpec</a></li><li><a href="https://issues.apache.org/jira/browse/CASSANDRA-1735" rel="nofollow">https://issues.apache.org/jira/browse/CASSANDRA-1735</a></li><li><a href="https://github.com/bfrog/whizzer" rel="nofollow">https://github.com/bfrog/whizzer</a></li><li><a href="http://github.com/msgpack/" rel="nofollow">http://github.com/msgpack/</a><br /><br /></li></ul>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/site/pyconminijp/reports/talks-pm&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/recentChanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="../system/app/pages/reportAbuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/5acb68/system/js/jot_min_view__ja.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"\u691c\u7d22\u30aa\u30d7\u30b7\u30e7\u30f3\u3092\u8a2d\u5b9a...","url":"/site/pyconminijp/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", false);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+          JOT_addListener('titleChange', 'JOT_RECENTCHANGES_titleChange', 'COMP_1233004576060921');
+        </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXsyO8Rt87TTHQ1KkSdlmryUp10bH2lLc1BQqYKqGwTNiAFDxESI5CvDUTEGjvEPF86FQapOS6IyTOSQZMCwbRiFNNHzZW0nqW53n6Gxgm4DSNcbfsroYuI-vOvmiGr-t6zl_aY-/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('../_/tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "ja");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+        JOT_insertTranslateCode('en', 'ja');
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/pyconminijp/reports/talks-pm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Oct 2020 06:21:46 GMT -->
+</html>
